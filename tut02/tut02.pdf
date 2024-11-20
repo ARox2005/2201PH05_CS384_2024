@@ -1,0 +1,34 @@
+You cant use any inbuilt functions of Python
+
+1. Unitary Sum of Digits
+Write a program that takes an integer as input and calculates the sum of its digits using a loop. The program should repeatedly sum the digits until a single 
+digit is obtained. Do not use Python’s built-in functions for string manipulation
+
+Input:
+- Suppose the user inputs the number '942'.
+
+Step-by-Step Execution:
+
+1. First Iteration:
+   - Initial 'n': 942
+   - Sum of digits:
+     - 9 + 4 + 2 = 15
+   - Update 'n': 15 (since 942 is not a single digit)
+
+2. Second Iteration:
+   - New 'n': 15
+   - Sum of digits:
+     - 1 + 5 = 6
+   - Update 'n': 6 (since 15 is not a single digit)
+
+3. Result:
+   - Now 'n' is 6, which is a single digit.
+   - The digital root of '942' is 6.
+
+### Output: 
+Enter an integer: 942
+The Unitary Sum of Digits of 942 is: 6 
+
+2. String Compression
+Implement a basic string compression algorithm where consecutive identical characters in a string are replaced by the character followed by the count of 
+repetitions. For example, the input "aaabbc" should be compressed to "a3b2c1". Do not use Python’s built-in functions for string manipulation.
