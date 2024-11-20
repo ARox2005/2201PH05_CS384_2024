@@ -1,1 +1,2 @@
-# 2201PH05_CS384_2024
+# CS384_2024
+Tuts Assignments
