@@ -47,8 +47,7 @@ remaining_rows=remaining_rows.sort_values(by='Roll').reset_index(drop=True);
 
 final_df2=pd.concat([first_three_rows,remaining_rows],ignore_index=True);
 
-output_path1 = 'Output1.xlsx'
-final_df.to_excel(output_path1, index=False)
-
-output_path2 = 'Output2.xlsx'
-final_df2.to_excel(output_path2,index=False)
+output_path = 'Output-1.xlsx'
+with pd.ExcelWriter(output_path, engine='openpyxl') as writer:
+    final_df.to_excel(writer, sheet_name='Sorted_grade_wise', index=False)
+    final_df2.to_excel(writer, sheet_name='Sorted_rollno_wise', index=False)
